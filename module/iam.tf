@@ -81,8 +81,7 @@ resource "aws_iam_policy" "eks-oidc-policy" {
     Statement = [{
       Action = [
         "s3:ListAllMyBuckets",
-        "s3:GetBucketLocation",
-        "*"
+        "s3:GetBucketLocation"
       ]
       Effect   = "Allow"
       Resource = "*"
